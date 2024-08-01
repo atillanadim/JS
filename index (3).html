@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>exercicios</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+
+<script>
+  function trocaImagem(){
+    var imagem = document.getElementById("imagem");
+    if(imagem.src.match("https://www.w3schools.com/js/pic_bulbon.gif")){
+      imagem.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    }else{
+      imagem.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    }
+  }
+</script>
+  <p><img id="imagem" onclick="trocaImagem()"
+       src="https://www.w3schools.com/js/pic_bulbon.gif" width = 100 height=100></p>
+  <p>Clique na lâmpada para ligar/desligar a luz </p>
+</body>
+</html>
